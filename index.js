@@ -187,9 +187,9 @@ function transformSourcesMap(options) {
         options.sourceMap = tempMap;
         return options;
       })
-      .catch(err => {
-        throw new Error(`Source map file could not be read (doesn't exist or isn't valid JSON).`);
-      })
+      // .catch(err => {
+      //   throw new Error(`Source map file could not be read (doesn't exist or isn't valid JSON).`);
+      // })
   );
 }
 
